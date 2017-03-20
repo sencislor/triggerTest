@@ -2,23 +2,27 @@ from obspy import UTCDateTime
 from obspy.io.xseed import Parser
 from obspy.core import inventory
 
-p = Parser('YN.dataless')
+p = Parser('./seisdata/YN.dataless')
 
 networks = p.get_inventory()["networks"]
 stations = p.get_inventory()['stations']
 channels = p.get_inventory()["channels"]
-
-i=0
+networks_new = []
+mask = 0
+i = 0
 for n1 in networks:
     i = i + 1
     for n2 in networks[i:]:
         if n2['network_code'] == n1['network_code']:
-            networks.remove(n2)
-     
-#print(networks)
-#print(stations)
-#print(channels)
-
+            mask = 1
+    if mask == 0:
+        networks_new.append(n1)
+    mask = 0    
+networks = networks_new            
+    
+print(networks)
+print(stations)
+print(channels)
 network_list = []
 for net in networks:
     station_list = []
@@ -40,12 +44,12 @@ for net in networks:
                 site_name = channel_info[2]
                 chn_name = channel_info[3]
                 if stn_name == station_code and net_name == network_code:
-                    longitude  = cha[u'longitude'] 
-                    latitude   = cha[u'latitude'] 
-                    elevation  = cha[u'elevation_in_m'] 
-                    depth      = cha[u'local_depth_in_m'] 
+                    longitude = cha[u'longitude'] 
+                    latitude = cha[u'latitude'] 
+                    elevation = cha[u'elevation_in_m'] 
+                    depth = cha[u'local_depth_in_m'] 
                     instrument = cha[u'instrument'] 
-                    sampling   = cha[u'sampling_rate'] 
+                    sampling = cha[u'sampling_rate'] 
                     start_date = cha[u'start_date']
                     if start_date == '':
                         start_date = UTCDateTime(1970, 1, 1, 0, 0)
