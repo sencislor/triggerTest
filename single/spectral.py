@@ -1555,7 +1555,7 @@ class PPSD(object):
         fig.ppsd = AttribDict()
 
         if show_coverage:
-            ax = fig.add_axes([0.12, 0.3, 0.90, 0.6] )
+            ax = fig.add_axes([0.12, 0.3, 0.90, 0.6])
             ax2 = fig.add_axes([0.15, 0.17, 0.7, 0.04])
         else:
             ax = fig.add_subplot(111) 
