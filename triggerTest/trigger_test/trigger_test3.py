@@ -6,8 +6,7 @@ Created on Mar 20, 2017
 from obspy import Stream, read
 from obspy.core import UTCDateTime
 from obspy.signal.trigger import coincidence_trigger
-from obspy.signal.cross_correlation import templates_max_similarity
-from pprint import pprint
+
 import matplotlib.pyplot as plt
 #from blaze.tests.test_utils import test_tmpfile
 
