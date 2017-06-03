@@ -1,0 +1,464 @@
+<?xml version='1.0' encoding='utf-8'?>
+<q:quakeml xmlns:ns0="http://anss.org/xmlns/catalog/0.1" xmlns:q="http://quakeml.org/xmlns/quakeml/1.2" xmlns="http://quakeml.org/xmlns/bed/1.2">
+  <eventParameters publicID="smi:local/96e3889d-22bc-4095-8f1c-f51ee4ea6b31">
+    <event publicID="quakeml:xx.local/event/00001348" ns0:eventid="1348" ns0:eventsource="xx" ns0:datasource="xx">
+      <preferredOriginID>quakeml:xx.local/origin/4770</preferredOriginID>
+      <preferredMagnitudeID>quakeml:xx.local/magnitude/4483</preferredMagnitudeID>
+      <type>earthquake</type>
+      <creationInfo>
+        <agencyID>xx</agencyID>
+        <agencyURI>smi:local/local</agencyURI>
+        <author>Antelope event2qml process</author>
+        <creationTime>2016-07-19T06:53:59.575000Z</creationTime>
+        <version>1468911239</version>
+      </creationInfo>
+      <origin publicID="quakeml:xx.local/origin/4770" ns0:dataid="4770" ns0:datasource="xx">
+        <time>
+          <value>2014-04-22T08:58:27.612000Z</value>
+          <uncertainty>350.0</uncertainty>
+        </time>
+        <latitude>
+          <value>45.6472</value>
+          <uncertainty>0.0125477172812</uncertainty>
+        </latitude>
+        <longitude>
+          <value>14.2422</value>
+          <uncertainty>0.0147728867059</uncertainty>
+        </longitude>
+        <depth>
+          <value>16124.3</value>
+          <uncertainty>2620.2</uncertainty>
+        </depth>
+        <quality>
+          <associatedPhaseCount>10</associatedPhaseCount>
+          <usedPhaseCount>10</usedPhaseCount>
+          <standardError>0.0333</standardError>
+        </quality>
+        <type>hypocenter</type>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>reviewed</evaluationStatus>
+        <comment>
+          <text>algorithm:locsat:iasp91</text>
+        </comment>
+        <creationInfo>
+          <author>University of t</author>
+          <version>1468911220.11</version>
+        </creationInfo>
+        <originUncertainty>
+          <preferredDescription>uncertainty ellipse</preferredDescription>
+          <minHorizontalUncertainty>1025.8</minHorizontalUncertainty>
+          <maxHorizontalUncertainty>1745.9</maxHorizontalUncertainty>
+          <azimuthMaxHorizontalUncertainty>146.34</azimuthMaxHorizontalUncertainty>
+        </originUncertainty>
+        <arrival publicID="quakeml:xx.local/arrival/40419/4770">
+          <pickID>quakeml:xx.local/pick/40419</pickID>
+          <phase>S</phase>
+          <azimuth>140.88</azimuth>
+          <distance>0.154</distance>
+          <timeResidual>-0.017</timeResidual>
+          <timeWeight>1.0</timeWeight>
+          <earthModelID>quakeml:xx.local/earthmodel/iasp91</earthModelID>
+          <creationInfo>
+            <creationTime>2016-07-19T06:53:39.994000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:xx.local/arrival/40391/4770">
+          <pickID>quakeml:xx.local/pick/40391</pickID>
+          <phase>P</phase>
+          <azimuth>140.88</azimuth>
+          <distance>0.154</distance>
+          <timeResidual>-0.023</timeResidual>
+          <timeWeight>1.0</timeWeight>
+          <earthModelID>quakeml:xx.local/earthmodel/iasp91</earthModelID>
+          <creationInfo>
+            <creationTime>2016-07-19T06:53:39.994000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:xx.local/arrival/40418/4770">
+          <pickID>quakeml:xx.local/pick/40418</pickID>
+          <phase>S</phase>
+          <azimuth>54.05</azimuth>
+          <distance>0.155</distance>
+          <timeResidual>0.018</timeResidual>
+          <timeWeight>1.0</timeWeight>
+          <earthModelID>quakeml:xx.local/earthmodel/iasp91</earthModelID>
+          <creationInfo>
+            <creationTime>2016-07-19T06:53:39.994000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:xx.local/arrival/40390/4770">
+          <pickID>quakeml:xx.local/pick/40390</pickID>
+          <phase>P</phase>
+          <azimuth>54.05</azimuth>
+          <distance>0.155</distance>
+          <timeResidual>0.009</timeResidual>
+          <timeWeight>1.0</timeWeight>
+          <earthModelID>quakeml:xx.local/earthmodel/iasp91</earthModelID>
+          <creationInfo>
+            <creationTime>2016-07-19T06:53:39.994000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:xx.local/arrival/40420/4770">
+          <pickID>quakeml:xx.local/pick/40420</pickID>
+          <phase>S</phase>
+          <azimuth>237.79</azimuth>
+          <distance>0.189</distance>
+          <timeResidual>-0.007</timeResidual>
+          <timeWeight>1.0</timeWeight>
+          <earthModelID>quakeml:xx.local/earthmodel/iasp91</earthModelID>
+          <creationInfo>
+            <creationTime>2016-07-19T06:53:39.995000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:xx.local/arrival/40392/4770">
+          <pickID>quakeml:xx.local/pick/40392</pickID>
+          <phase>P</phase>
+          <azimuth>237.79</azimuth>
+          <distance>0.189</distance>
+          <timeResidual>0.048</timeResidual>
+          <timeWeight>1.0</timeWeight>
+          <earthModelID>quakeml:xx.local/earthmodel/iasp91</earthModelID>
+          <creationInfo>
+            <creationTime>2016-07-19T06:53:39.995000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:xx.local/arrival/40393/4770">
+          <pickID>quakeml:xx.local/pick/40393</pickID>
+          <phase>P</phase>
+          <azimuth>333.31</azimuth>
+          <distance>0.276</distance>
+          <timeResidual>-0.055</timeResidual>
+          <timeWeight>1.0</timeWeight>
+          <earthModelID>quakeml:xx.local/earthmodel/iasp91</earthModelID>
+          <creationInfo>
+            <creationTime>2016-07-19T06:53:39.995000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:xx.local/arrival/40395/4770">
+          <pickID>quakeml:xx.local/pick/40395</pickID>
+          <phase>P</phase>
+          <azimuth>272.3</azimuth>
+          <distance>0.309</distance>
+          <timeResidual>0.049</timeResidual>
+          <timeWeight>1.0</timeWeight>
+          <earthModelID>quakeml:xx.local/earthmodel/iasp91</earthModelID>
+          <creationInfo>
+            <creationTime>2016-07-19T06:53:39.996000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:xx.local/arrival/40394/4770">
+          <pickID>quakeml:xx.local/pick/40394</pickID>
+          <phase>P</phase>
+          <azimuth>25.93</azimuth>
+          <distance>0.32</distance>
+          <timeResidual>0.02</timeResidual>
+          <timeWeight>1.0</timeWeight>
+          <earthModelID>quakeml:xx.local/earthmodel/iasp91</earthModelID>
+          <creationInfo>
+            <creationTime>2016-07-19T06:53:39.996000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:xx.local/arrival/40397/4770">
+          <pickID>quakeml:xx.local/pick/40397</pickID>
+          <phase>P</phase>
+          <azimuth>280.66</azimuth>
+          <distance>0.34</distance>
+          <timeResidual>-0.042</timeResidual>
+          <timeWeight>1.0</timeWeight>
+          <earthModelID>quakeml:xx.local/earthmodel/iasp91</earthModelID>
+          <creationInfo>
+            <creationTime>2016-07-19T06:53:39.996000Z</creationTime>
+          </creationInfo>
+        </arrival>
+      </origin>
+      <magnitude publicID="quakeml:xx.local/magnitude/4483">
+        <mag>
+          <value>4.55</value>
+          <uncertainty>1.01</uncertainty>
+        </mag>
+        <type>ml</type>
+        <originID>quakeml:xx.local/origin/4770</originID>
+        <methodID>quakeml:local/dbevproc</methodID>
+        <stationCount>6</stationCount>
+        <creationInfo>
+          <author>dbevproc</author>
+          <creationTime>2017-02-08T10:44:14.821000Z</creationTime>
+        </creationInfo>
+      </magnitude>
+      <stationMagnitude publicID="quakeml:xx.local/magnitude/station/4483/CEY">
+        <originID>quakeml:xx.local/origin/4770</originID>
+        <mag>
+          <value>4.41</value>
+        </mag>
+        <type>ml</type>
+        <methodID>quakeml:local/dbevproc</methodID>
+        <creationInfo>
+          <author>dbevproc</author>
+          <creationTime>2017-02-08T10:44:14.340000Z</creationTime>
+        </creationInfo>
+      </stationMagnitude>
+      <stationMagnitude publicID="quakeml:xx.local/magnitude/station/4483/JAVS">
+        <originID>quakeml:xx.local/origin/4770</originID>
+        <mag>
+          <value>4.88</value>
+        </mag>
+        <type>ml</type>
+        <methodID>quakeml:local/dbevproc</methodID>
+        <creationInfo>
+          <author>dbevproc</author>
+          <creationTime>2017-02-08T10:44:14.341000Z</creationTime>
+        </creationInfo>
+      </stationMagnitude>
+      <stationMagnitude publicID="quakeml:xx.local/magnitude/station/4483/DST2">
+        <originID>quakeml:xx.local/origin/4770</originID>
+        <mag>
+          <value>3.76</value>
+        </mag>
+        <type>ml</type>
+        <methodID>quakeml:local/dbevproc</methodID>
+        <creationInfo>
+          <author>dbevproc</author>
+          <creationTime>2017-02-08T10:44:14.341000Z</creationTime>
+        </creationInfo>
+      </stationMagnitude>
+      <stationMagnitude publicID="quakeml:xx.local/magnitude/station/4483/SKDS">
+        <originID>quakeml:xx.local/origin/4770</originID>
+        <mag>
+          <value>5.78</value>
+        </mag>
+        <type>ml</type>
+        <methodID>quakeml:local/dbevproc</methodID>
+        <creationInfo>
+          <author>dbevproc</author>
+          <creationTime>2017-02-08T10:44:14.341000Z</creationTime>
+        </creationInfo>
+      </stationMagnitude>
+      <stationMagnitude publicID="quakeml:xx.local/magnitude/station/4483/GBAS">
+        <originID>quakeml:xx.local/origin/4770</originID>
+        <mag>
+          <value>4.17</value>
+        </mag>
+        <type>ml</type>
+        <methodID>quakeml:local/dbevproc</methodID>
+        <creationInfo>
+          <author>dbevproc</author>
+          <creationTime>2017-02-08T10:44:14.342000Z</creationTime>
+        </creationInfo>
+      </stationMagnitude>
+      <stationMagnitude publicID="quakeml:xx.local/magnitude/station/4483/KNDS">
+        <originID>quakeml:xx.local/origin/4770</originID>
+        <mag>
+          <value>4.68</value>
+        </mag>
+        <type>ml</type>
+        <methodID>quakeml:local/dbevproc</methodID>
+        <creationInfo>
+          <author>dbevproc</author>
+          <creationTime>2017-02-08T10:44:14.372000Z</creationTime>
+        </creationInfo>
+      </stationMagnitude>
+      <pick publicID="quakeml:xx.local/pick/40419">
+        <time>
+          <value>2014-04-22T08:58:34.936000Z</value>
+        </time>
+        <waveformID channelCode="HHE" locationCode="" networkCode="SL" stationCode="KNDS">quakeml:xx.local/waveform/</waveformID>
+        <backazimuth>
+          <value>140.88</value>
+        </backazimuth>
+        <phaseHint>S</phaseHint>
+        <evaluationMode>automatic</evaluationMode>
+        <evaluationStatus>preliminary</evaluationStatus>
+        <creationInfo>
+          <author>dbp:blaz:16132</author>
+          <creationTime>2016-05-11T10:19:38.064000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:xx.local/pick/40391">
+        <time>
+          <value>2014-04-22T08:58:31.844000Z</value>
+        </time>
+        <waveformID channelCode="HHZ" locationCode="" networkCode="SL" stationCode="KNDS">quakeml:xx.local/waveform/</waveformID>
+        <backazimuth>
+          <value>140.88</value>
+        </backazimuth>
+        <phaseHint>P</phaseHint>
+        <evaluationMode>automatic</evaluationMode>
+        <evaluationStatus>preliminary</evaluationStatus>
+        <creationInfo>
+          <author>dbp:rt:15085</author>
+          <creationTime>2015-03-26T13:24:08.840000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:xx.local/pick/40418">
+        <time>
+          <value>2014-04-22T08:58:34.873000Z</value>
+        </time>
+        <waveformID channelCode="HHE" locationCode="" networkCode="SL" stationCode="CEY">quakeml:xx.local/waveform/</waveformID>
+        <backazimuth>
+          <value>54.05</value>
+        </backazimuth>
+        <phaseHint>S</phaseHint>
+        <evaluationMode>automatic</evaluationMode>
+        <evaluationStatus>preliminary</evaluationStatus>
+        <creationInfo>
+          <author>dbp:blaz:16173</author>
+          <creationTime>2016-06-21T08:22:54.827000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:xx.local/pick/40390">
+        <time>
+          <value>2014-04-22T08:58:31.821000Z</value>
+        </time>
+        <waveformID channelCode="HHZ" locationCode="" networkCode="SL" stationCode="CEY">quakeml:xx.local/waveform/</waveformID>
+        <backazimuth>
+          <value>54.05</value>
+        </backazimuth>
+        <phaseHint>P</phaseHint>
+        <evaluationMode>automatic</evaluationMode>
+        <evaluationStatus>preliminary</evaluationStatus>
+        <creationInfo>
+          <author>dbp:blaz:16132</author>
+          <creationTime>2016-05-11T10:09:49.586000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:xx.local/pick/40420">
+        <time>
+          <value>2014-04-22T08:58:35.663000Z</value>
+        </time>
+        <waveformID channelCode="HHE" locationCode="" networkCode="SL" stationCode="SKDS">quakeml:xx.local/waveform/</waveformID>
+        <backazimuth>
+          <value>237.79</value>
+        </backazimuth>
+        <phaseHint>S</phaseHint>
+        <evaluationMode>automatic</evaluationMode>
+        <evaluationStatus>preliminary</evaluationStatus>
+        <creationInfo>
+          <author>dbp:rt:15085</author>
+          <creationTime>2015-03-26T13:35:11.456000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:xx.local/pick/40392">
+        <time>
+          <value>2014-04-22T08:58:32.320000Z</value>
+        </time>
+        <waveformID channelCode="HHZ" locationCode="" networkCode="SL" stationCode="SKDS">quakeml:xx.local/waveform/</waveformID>
+        <backazimuth>
+          <value>237.79</value>
+        </backazimuth>
+        <phaseHint>P</phaseHint>
+        <evaluationMode>automatic</evaluationMode>
+        <evaluationStatus>preliminary</evaluationStatus>
+        <creationInfo>
+          <author>dbp:blaz:16132</author>
+          <creationTime>2016-05-11T10:10:49.754000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:xx.local/pick/40393">
+        <time>
+          <value>2014-04-22T08:58:33.680000Z</value>
+        </time>
+        <waveformID channelCode="HHZ" locationCode="" networkCode="SL" stationCode="JAVS">quakeml:xx.local/waveform/</waveformID>
+        <backazimuth>
+          <value>333.31</value>
+        </backazimuth>
+        <phaseHint>P</phaseHint>
+        <evaluationMode>automatic</evaluationMode>
+        <evaluationStatus>preliminary</evaluationStatus>
+        <creationInfo>
+          <author>dbp:blaz:16201</author>
+          <creationTime>2016-07-19T06:53:26.739000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:xx.local/pick/10">
+        <time>
+          <value>2014-04-22T08:58:31.738000Z</value>
+        </time>
+        <waveformID channelCode="HHZ" locationCode="" networkCode="SL" stationCode="CEY">quakeml:xx.local/waveform/3572</waveformID>
+        <filterID>quakeml:xx.local/filter/bandpass/butterworth/bw_2._4_8.0_4</filterID>
+        <evaluationMode>automatic</evaluationMode>
+        <evaluationStatus>preliminary</evaluationStatus>
+        <comment>
+          <text>snr:131050.0, state:D6</text>
+        </comment>
+        <creationInfo>
+          <creationTime>2015-02-28T05:56:54.595000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:xx.local/pick/12">
+        <time>
+          <value>2014-04-22T08:58:31.748000Z</value>
+        </time>
+        <waveformID channelCode="HHZ" locationCode="" networkCode="SL" stationCode="CEY">quakeml:xx.local/waveform/3572</waveformID>
+        <filterID>quakeml:xx.local/filter/bandpass/butterworth/bw_0.8_4_6_4</filterID>
+        <evaluationMode>automatic</evaluationMode>
+        <evaluationStatus>preliminary</evaluationStatus>
+        <comment>
+          <text>snr:71515.0, state:D</text>
+        </comment>
+        <creationInfo>
+          <creationTime>2015-02-28T05:56:54.603000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:xx.local/pick/14">
+        <time>
+          <value>2014-04-22T08:58:31.857000Z</value>
+        </time>
+        <waveformID channelCode="HHZ" locationCode="" networkCode="SL" stationCode="KNDS">quakeml:xx.local/waveform/3962</waveformID>
+        <filterID>quakeml:xx.local/filter/bandpass/butterworth/bw_2._4_8.0_4</filterID>
+        <evaluationMode>automatic</evaluationMode>
+        <evaluationStatus>preliminary</evaluationStatus>
+        <comment>
+          <text>snr:413160.0, state:D6</text>
+        </comment>
+        <creationInfo>
+          <creationTime>2015-02-28T05:56:53.274000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:xx.local/pick/16">
+        <time>
+          <value>2014-04-22T08:58:31.867000Z</value>
+        </time>
+        <waveformID channelCode="HHZ" locationCode="" networkCode="SL" stationCode="KNDS">quakeml:xx.local/waveform/3962</waveformID>
+        <filterID>quakeml:xx.local/filter/bandpass/butterworth/bw_0.8_4_6_4</filterID>
+        <evaluationMode>automatic</evaluationMode>
+        <evaluationStatus>preliminary</evaluationStatus>
+        <comment>
+          <text>snr:102460.0, state:D</text>
+        </comment>
+        <creationInfo>
+          <creationTime>2015-02-28T05:56:53.281000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:xx.local/pick/22">
+        <time>
+          <value>2014-04-22T08:58:32.342000Z</value>
+        </time>
+        <waveformID channelCode="HHZ" locationCode="" networkCode="SL" stationCode="SKDS">quakeml:xx.local/waveform/4208</waveformID>
+        <filterID>quakeml:xx.local/filter/bandpass/butterworth/bw_0.8_4_6_4</filterID>
+        <evaluationMode>automatic</evaluationMode>
+        <evaluationStatus>preliminary</evaluationStatus>
+        <comment>
+          <text>snr:68727.0, state:D</text>
+        </comment>
+        <creationInfo>
+          <creationTime>2015-02-28T05:56:54.011000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:xx.local/pick/28">
+        <time>
+          <value>2014-04-22T08:58:33.652000Z</value>
+        </time>
+        <waveformID channelCode="HHZ" locationCode="" networkCode="SL" stationCode="JAVS">quakeml:xx.local/waveform/3908</waveformID>
+        <filterID>quakeml:xx.local/filter/bandpass/butterworth/bw_1_4_8_4</filterID>
+        <evaluationMode>automatic</evaluationMode>
+        <evaluationStatus>preliminary</evaluationStatus>
+        <comment>
+          <text>snr:107070.0, state:D</text>
+        </comment>
+        <creationInfo>
+          <creationTime>2015-02-28T05:56:53.242000Z</creationTime>
+        </creationInfo>
+      </pick>
+    </event>
+  </eventParameters>
+</q:quakeml>
