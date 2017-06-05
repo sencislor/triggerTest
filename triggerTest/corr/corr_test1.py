@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from obspy.signal.invsim import corn_freq_2_paz
 from eqcorrscan.core.template_gen import multi_template_gen
 from obspy.core.event import read_events
+from eqcorrscan.utils import pre_processing
 
 catalog = read_events('ludian.xml')
 for e in catalog:
@@ -14,31 +15,39 @@ for e in catalog:
     for p in picks:
         print(p)
 
-ynst = read("2014080316.YN.mseed").merge(fill_value=0)
-st = ynst.select(station='QIJ')
+ynst = read("2014080316.YN.mseed").sort().merge()
+
+st = ynst.select(station='ZAT')
+st += ynst.select(station='QIJ')
+st += ynst.select(station='PGE')
 st += ynst.select(station='DOC')
 st += ynst.select(station='XUW')
-print(st)
-# st.plot()
-templates = multi_template_gen(catalog, st, 2, plot=True)
+
+#st.filter('bandpass', freqmin=1, freqmax=10,corners=4)
+st = pre_processing.shortproc(st, lowcut=2, highcut=10, filt_order=4, samp_rate=100,
+                            starttime=st[0].stats.starttime, endtime=st[0].stats.endtime)
+
+templates = multi_template_gen(catalog, st, 5, plot=True)
+
+#t = UTCDateTime("2014-08-03T08:30:19.095000")
+#st = st.slice(t-10, t+36000)
+
+#st.plot()
 
 for t in templates:
-   # print(t)
-
-    for tr in t:
+    print(t)
+    t.write('template.ms', format="MSEED")
+    # for tr in t:
         #print(tr.stats.network)
         #print(tr.stats.station)
         #print(tr.stats.channel)
-        if tr.stats.channel == 'BZ':
-            tr.stats.channel = 'BHZ'
-        if tr.stats.channel == 'BE':
-            tr.stats.channel = 'BHE'
-        if tr.stats.channel == 'BN':
-            tr.stats.channel = 'BHN'
-
+        # if tr.stats.channel == 'BZ':
+        #     tr.stats.channel = 'BHZ'
+        # if tr.stats.channel == 'BE':
+        #     tr.stats.channel = 'BHE'
+        # if tr.stats.channel == 'BN':
+        #     tr.stats.channel = 'BHN'
         #print(tr)
-    t.write('template.ms', format="MSEED")
-
-#---------------------------------------------------------------------
+#read('template.ms').plot()
 
 
