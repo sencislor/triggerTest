@@ -28,25 +28,89 @@
       </magnitude>
       <pick>
         <time>
-          <value>2014-08-03T08:30:19.005000Z</value>
+          <value>2014-08-03T08:30:18.82</value>
         </time>
-        <waveformID channelCode="BHZ" locationCode="00" networkCode="YN" stationCode="QIJ"/>
+        <waveformID channelCode="BZ" locationCode="00" networkCode="YN" stationCode="QIJ"/>
         <phaseHint>Pg</phaseHint>
       </pick>
       <pick>
         <time>
-          <value>2014-08-03T08:30:19.005000Z</value>
+          <value>2014-08-03T08:30:18.46</value>
         </time>
-        <waveformID channelCode="BHE" locationCode="00" networkCode="YN" stationCode="QIJ"/>
+        <waveformID channelCode="BZ" locationCode="00" networkCode="YN" stationCode="ZAT"/>
         <phaseHint>Pg</phaseHint>
       </pick>
       <pick>
         <time>
-          <value>2014-08-03T08:30:19.005000Z</value>
+          <value>2014-08-03T08:30:18.46</value>
         </time>
-        <waveformID channelCode="BHN" locationCode="00" networkCode="YN" stationCode="QIJ"/>
+        <waveformID channelCode="BE" locationCode="00" networkCode="YN" stationCode="ZAT"/>
         <phaseHint>Pg</phaseHint>
       </pick>
+      <pick>
+        <time>
+          <value>2014-08-03T08:30:18.46</value>
+        </time>
+        <waveformID channelCode="BN" locationCode="00" networkCode="YN" stationCode="ZAT"/>
+        <phaseHint>Pg</phaseHint>
+      </pick>
+      <!--
+      <pick>
+        <time>
+          <value>2014-08-03T08:30:23.65</value>
+        </time>
+        <waveformID channelCode="BE" locationCode="00" networkCode="YN" stationCode="ZAT"/>
+        <phaseHint>Sg</phaseHint>
+      </pick>
+      -->
+      <pick>
+        <time>
+          <value>2014-08-03T08:30:25.26</value>
+        </time>
+        <waveformID channelCode="BZ" locationCode="00" networkCode="SC" stationCode="PGE"/>
+        <phaseHint>Pg</phaseHint>
+      </pick>
+      <!--
+      <pick>
+        <time>
+          <value>2014-08-03T08:30:36.78</value>
+        </time>
+        <waveformID channelCode="BE" locationCode="00" networkCode="SC" stationCode="PGE"/>
+        <phaseHint>Sg</phaseHint>
+      </pick>
+      -->
+      <pick>
+        <time>
+          <value>2014-08-03T08:30:29.98Z</value>
+        </time>
+        <waveformID channelCode="BZ" locationCode="00" networkCode="YN" stationCode="DOC"/>
+        <phaseHint>Pg</phaseHint>
+      </pick>
+      <!--
+      <pick>
+        <time>
+          <value>2014-08-03T08:30:44.02Z</value>
+        </time>
+        <waveformID channelCode="BN" locationCode="00" networkCode="YN" stationCode="DOC"/>
+        <phaseHint>Sg</phaseHint>
+      </pick>
+      -->
+      <pick>
+        <time>
+          <value>2014-08-03T08:30:34.85Z</value>
+        </time>
+        <waveformID channelCode="BZ" locationCode="00" networkCode="YN" stationCode="XUW"/>
+        <phaseHint>Pg</phaseHint>
+      </pick>
+      <!--
+      <pick>
+        <time>
+          <value>2014-08-03T08:30:51.82Z</value>
+        </time>
+        <waveformID channelCode="BE" locationCode="00" networkCode="YN" stationCode="XUW"/>
+        <phaseHint>Sg</phaseHint>
+      </pick>
+      -->
     </event>
   </eventParameters>
 </q:quakeml>
